@@ -1,0 +1,7 @@
+services:
+  nextjs_app:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+

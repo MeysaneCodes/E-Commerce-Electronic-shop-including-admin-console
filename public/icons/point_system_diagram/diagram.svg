@@ -1,0 +1,61 @@
+<svg width="1000" height="200" viewBox="0 0 1000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .step-box {
+        rx: 12;
+        stroke: #d1d5db;
+        stroke-width: 1.5;
+        }
+        .icon {
+        fill: #2563eb;
+        }
+        .label {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 14px;
+        fill: #111827;
+        font-weight: 500;
+        text-anchor: middle;
+        }
+        .arrow {
+        stroke: #6b7280;
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+        }
+    </style>
+
+    <!-- Arrowhead -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+        </marker>
+    </defs>
+
+    <!-- Step 1: Buy Product -->
+    <rect x="40" y="30" width="160" height="140" class="step-box" fill="#eff6ff"/>
+    <path class="icon" d="M70 70h60l-5 30H75l-5-30zm5 35a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm40 0a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
+    <text x="120" y="160" class="label">Buy Product</text>
+
+    <!-- Arrow 1 -->
+    <line x1="200" y1="100" x2="250" y2="100" class="arrow"/>
+
+    <!-- Step 2: Scan Barcode -->
+    <rect x="250" y="30" width="160" height="140" class="step-box" fill="#fefce8"/>
+    <path class="icon" d="M280 70h60v5h-60zM280 80h60v5h-60zM280 90h60v5h-60z" />
+    <text x="330" y="160" class="label">Scan at Checkout</text>
+
+    <!-- Arrow 2 -->
+    <line x1="410" y1="100" x2="460" y2="100" class="arrow"/>
+
+    <!-- Step 3: Earn Points -->
+    <rect x="460" y="30" width="160" height="140" class="step-box" fill="#ecfdf5"/>
+    <circle cx="540" cy="95" r="25" fill="#10b981" />
+    <text x="540" y="102" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">+</text>
+    <text x="540" y="160" class="label">Earn Points</text>
+
+    <!-- Arrow 3 -->
+    <line x1="620" y1="100" x2="670" y2="100" class="arrow"/>
+
+    <!-- Step 4: Redeem Discount -->
+    <rect x="670" y="30" width="160" height="140" class="step-box" fill="#fdf2f8"/>
+    <path class="icon" d="M700 90l20 20 30-30-20-20-30 30zm7 7a4 4 0 1 1 6 6 4 4 0 0 1-6-6z" />
+    <text x="750" y="160" class="label">Redeem for Discount</text>
+</svg>
